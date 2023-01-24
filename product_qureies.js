@@ -37,7 +37,7 @@ db.product.find({product_material:"Soft"}).pretty()
 
 //9.Find products which contain product color indigo  and product price 492.00//
 
-db.product.find({ $and : [{product_price:492},{product_color:"indigo"}]}).pretty();
+db.product.find({ $or : [{product_price:492},{product_color:"indigo"}]}).pretty();
 
 //10.Delete the products which product price value are same//
 
